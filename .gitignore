@@ -1,0 +1,10 @@
+# ignore the configuration file that contains sensitive information
+config/db_config.php
+
+# ignore system files
+.DS_Store
+Thumbs.db
+
+# ignore temporary folders
+node_modules/
+dist/
