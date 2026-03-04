@@ -1,6 +1,6 @@
 -- 1. initialize database
-CREATE DATABASE IF NOT EXISTS bubble_tea_db;
-USE bubble_tea_db;
+CREATE DATABASE IF NOT EXISTS bubbletea_db;
+USE bubbletea_db;
 
 -- 2. create category table (for navbar: Milk Tea, Fruit Tea, Coffee)
 CREATE TABLE IF NOT EXISTS categories (

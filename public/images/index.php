@@ -48,6 +48,29 @@
         endif;
         ?>
     </main>
+    <div id="specModal" class="hidden fixed inset-0 bg-black/50 z-50 flex items-end justify-center">
+    <div class="bg-white w-full rounded-t-2xl p-6 space-y-4 animate-slide-up">
+        <h2 id="modalTitle" class="text-xl font-bold"></h2>
+        
+        <div>
+            <p class="text-sm text-gray-500 mb-2">规格</p>
+            <div class="flex gap-2" id="sizeOptions">
+                <button class="border p-2 rounded-lg flex-1" onclick="selectSpec('size', 'Regular')">标准</button>
+                <button class="border p-2 rounded-lg flex-1" onclick="selectSpec('size', 'Large')">大杯</button>
+            </div>
+        </div>
 
-    </body>
+        <div>
+            <p class="text-sm text-gray-500 mb-2">糖度</p>
+            <div class="flex gap-2 flex-wrap" id="sugarOptions">
+                <button class="border p-2 rounded-lg px-4" onclick="selectSpec('sugar', 'Normal')">全糖</button>
+                <button class="border p-2 rounded-lg px-4" onclick="selectSpec('sugar', 'Half')">半糖</button>
+            </div>
+        </div>
+
+        <button onclick="addToCart()" class="w-full bg-orange-500 text-white py-3 rounded-full font-bold">加入购物车</button>
+        <button onclick="closeModal()" class="w-full text-gray-400 py-2 text-sm">取消</button>
+        </div>
+    </div>
+</body>
 </html>
